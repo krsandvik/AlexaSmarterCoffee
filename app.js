@@ -2,7 +2,9 @@
 var express = require('express');
 var spawn = require("child_process").spawn;
 var request = require('request');
+var cors = require('cors');
 var app = express();
+app.use(cors());
 app.use(require('morgan')('dev'));
 
 /*
